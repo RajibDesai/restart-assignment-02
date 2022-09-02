@@ -1,33 +1,33 @@
 body {
     font-family: 'Roboto', sans-serif;
-    /* margin: 5px; */
     background-color: rgb(236, 166, 166);
 }
 
-.thumbnail {
-    background-color: rgb(110, 109, 109);
-    height: 750px;
+/* -----------------thumbnail ----------------------*/
 
+.thumbnail {
+    background-color: rgb(17, 6, 6);
+    height: 750px;
+    margin-bottom: 50px;
 }
 
 .banar {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     text-align: center;
     padding-top: 20px;
 }
 
 .banar-text {
-    width: 555px;
-    height: 600px;
+    width: 37%;
+    height: 740px;
     font-size: 2em;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     margin-top: 15px;
     padding-top: 15px;
     margin-right: 50px;
-    margin-bottom: 110px;
     padding-right: 20px;
     color: rgb(247, 247, 241);
 
@@ -48,9 +48,66 @@ body {
 }
 
 .banar>div img {
-    width: 214%;
+    width: 200%;
 }
 
-/* .fa-angle-right {
-    font-size: 1.2em;
-} */
+/*------------- thumbnail end -----------------*/
+
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 300px;
+    height: 180px;
+    border: 3px solid indigo;
+    border-radius: 5px;
+    background-color: rgb(39, 37, 37);
+}
+
+.menu-btn button {
+    margin: 5px;
+    height: 50px;
+    background-color: rgb(29, 28, 28);
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(228, 46, 46);
+    border: 3px solid gray;
+}
+
+.flex-grid-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: 15px;
+    justify-content: center;
+    width: 1350px;
+}
+
+img {
+    width: 100%
+}
+
+.info {
+    display: flex;
+    justify-content: start;
+
+}
+
+.comment {
+    margin-left: 50px;
+}
+
+.transfer {
+    width: 100px;
+    height: 30px;
+    font-size: 1.2rem;
+    border: 3px solid lightgray;
+    border-radius: 3px;
+    background-color: rgb(214, 205, 192);
+    color: rgb(204, 49, 22);
+}
