@@ -1,13 +1,13 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(236, 166, 166);
+    background-color: rgb(155, 149, 149);
 }
 
 /* -----------------thumbnail ----------------------*/
 
 .thumbnail {
     background-color: rgb(17, 6, 6);
-    height: 750px;
+    height: 700px;
     margin-bottom: 50px;
 }
 
@@ -21,7 +21,7 @@ body {
 
 .banar-text {
     width: 37%;
-    height: 740px;
+    height: 640px;
     font-size: 2em;
     justify-content: center;
     align-items: center;
@@ -31,6 +31,10 @@ body {
     padding-right: 20px;
     color: rgb(247, 247, 241);
 
+}
+
+.main-container {
+    background-color: rgb(176, 178, 180);
 }
 
 .banar-text button {
@@ -48,7 +52,7 @@ body {
 }
 
 .banar>div img {
-    width: 200%;
+    width: 165%;
 }
 
 /*------------- thumbnail end -----------------*/
@@ -62,9 +66,9 @@ body {
 .menu-btn {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
-    width: 300px;
-    height: 180px;
+    max-width: 320px;
+    width: 320px;
+    height: 300px;
     border: 3px solid indigo;
     border-radius: 5px;
     background-color: rgb(39, 37, 37);
@@ -72,12 +76,13 @@ body {
 
 .menu-btn button {
     margin: 5px;
-    height: 70px;
-    background-color: rgb(29, 28, 28);
+    width: 310px;
+    height: 90px;
     color: white;
     border-radius: 5px;
     background-color: rgb(228, 46, 46);
     border: 3px solid gray;
+    font-size: 1.3rem;
 }
 
 .flex-grid-container {
@@ -88,10 +93,20 @@ body {
 .blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
     grid-gap: 10px;
     margin-left: 15px;
     justify-content: center;
     width: 1350px;
+    color: rgb(238, 238, 232);
+    background-color: rgb(122, 104, 104);
+}
+
+.blog {
+    margin-bottom: 10px;
+    border: 3px solid rgb(243, 248, 247);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 img {
@@ -145,4 +160,84 @@ hr {
 
 .footer-menu span {
     padding: 15px;
+}
+
+/* --------------------Match css start--------------------- */
+
+.match-container {
+    display: flex;
+
+}
+
+.matches {
+    margin-left: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    background-color: cadetblue;
+    border: 3px solid rgb(40, 42, 202);
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.team .country h3 {
+    margin: 0px 10px 0px 10px;
+}
+
+.match-btn {
+    display: flex;
+    max-width: 320px;
+    flex-direction: column;
+    width: 320px;
+    height: 300px;
+    border: 3px solid indigo;
+    border-radius: 5px;
+    background-color: rgb(39, 37, 37);
+
+}
+
+.match-btn button {
+    width: 320px;
+    height: 100px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(228, 46, 46);
+    border: 3px solid gray;
+    font-size: 1.4rem;
+}
+
+
+
+
+.country {
+    display: inline-block;
+
+}
+
+/******************** Match css end **********************/
+
+/********************responsive start ********************/
+
+/********************* for laptab ***************************/
+@media only screen and (min-width : 1200px) {
+    .thumbnail {
+        background-color: rgb(17, 6, 6);
+        height: 700px;
+        margin-bottom: 50px;
+    }
+
 }
