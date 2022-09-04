@@ -1,40 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(155, 149, 149);
 }
 
 /* -----------------thumbnail ----------------------*/
-
-.thumbnail {
-    background-color: rgb(17, 6, 6);
-    height: 700px;
-    margin-bottom: 50px;
-}
-
-.banar {
-    display: flex;
-    justify-content: center;
+.thumbnail-container {
+    height: 900px;
+    display: inline-flex;
     align-items: center;
-    text-align: center;
-    padding-top: 20px;
+    background-color: black;
+
 }
 
 .banar-text {
-    width: 37%;
-    height: 640px;
-    font-size: 2em;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-    padding-top: 15px;
-    margin-right: 50px;
-    padding-right: 20px;
-    color: rgb(247, 247, 241);
+    height: 300px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 50px 0 50px;
+    padding: 0 50px 0 50px;
 
 }
 
-.main-container {
-    background-color: rgb(176, 178, 180);
+
+.responsive {
+    width: 100%;
+    height: auto;
+
 }
 
 .banar-text button {
@@ -51,15 +48,12 @@ body {
     padding-left: 5px;
 }
 
-.banar>div img {
-    width: 165%;
-}
-
 /*------------- thumbnail end -----------------*/
 
 /************** main start *********************/
 
 .main-container {
+    background-color: rgb(176, 178, 180);
     margin: 100px;
 }
 
@@ -87,7 +81,6 @@ body {
 
 .flex-grid-container {
     display: flex;
-    justify-content: space-around;
 }
 
 .blogs {
@@ -110,7 +103,8 @@ body {
 }
 
 img {
-    width: 100%
+    width: 100%;
+    height: auto;
 }
 
 .info {
@@ -139,7 +133,7 @@ img {
 
 .footer {
     background-color: rgb(19, 18, 18);
-    width: 100%;
+    /* width: 100%; */
     height: 450px;
     display: flex;
     flex-wrap: wrap;
@@ -154,9 +148,9 @@ img {
     padding: 10px;
 }
 
-hr {
+/* hr {
     width: 60%;
-}
+} */
 
 .footer-menu span {
     padding: 15px;
@@ -230,14 +224,62 @@ hr {
 
 /******************** Match css end **********************/
 
-/********************responsive start ********************/
+/******************** css responsive ********************/
 
-/********************* for laptab ***************************/
-@media only screen and (min-width : 1200px) {
-    .thumbnail {
-        background-color: rgb(17, 6, 6);
-        height: 700px;
-        margin-bottom: 50px;
+
+@media only screen and (min-width : 992px) {
+    .thumbnail-container {
+        display: flex;
     }
 
+    .flex-grid-container {
+        display: flex;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* # Tablet */
+@media only screen and (max-width: 768px) {
+    .thumbnail-container {
+        display: inline-flex;
+    }
+
+    .flex-grid-container {
+        display: flex;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-btn {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* # Mobile */
+@media only screen and (max-width: 480px) {
+    .thumbnail-container {
+        display: inline-flex;
+    }
+
+    .flex-grid-container {
+        display: flex;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .menu-btn {
+        display: flex;
+        flex-direction: row;
+    }
 }
